@@ -1,7 +1,21 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  return <div className='App'>Jsmilga</div>;
+  const [count, setCount] = useState(0);
+  function handleIncrement() {
+    setCount((c) => c + 1);
+  }
+  function handleDecrement() {
+    setCount((c) => c - 1);
+  }
+  return (
+    <div className='App'>
+      <button onClick={handleIncrement}>increment</button>
+      <span>{count}</span>
+      <button onClick={handleDecrement}>decrement</button>
+    </div>
+  );
 }
 
 export default App;
