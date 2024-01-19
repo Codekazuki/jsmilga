@@ -9,7 +9,7 @@ function Test() {
 }
 const Booklist = () => {
   return (
-    <div>
+    <div className='booklist'>
       <Book />
       <Book />
       <Book />
@@ -18,16 +18,17 @@ const Booklist = () => {
 };
 function Book() {
   return (
-    <>
+    <div className='book'>
       <Name />
       <Image />
       <Author />
-    </>
+    </div>
   );
 }
 const Image = () => {
   return (
     <img
+      className='pix'
       src='https://images-na.ssl-images-amazon.com/images/G/01/error/38._TTD_.jpg'
       alt='amazon'
     />

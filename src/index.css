@@ -16,3 +16,21 @@ code {
   margin: 0;
   box-sizing: border-box;
 }
+.pix {
+  height: 200px;
+  border: 1px solid red;
+  border-radius: 16px;
+}
+.book {
+  background-color: green;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16rem 0;
+}
+.booklist {
+  height: 90px;
+  display: flex;
+}
