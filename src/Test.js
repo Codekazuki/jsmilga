@@ -30,10 +30,9 @@ function Book() {
 const Image = () => {
   return <img className='pix' src={myImage} alt='amazon' />;
 };
-const Book2 = () => {
-  return <img className='pix' src='./images/Screeshot(41).png' alt='book2' />;
-};
-
+const Book2 = () => (
+  <img className='pix' src='./images/Screenshot (41).png' alt='book2' />
+);
 function Author() {
   return <h1>ayodele</h1>;
 }
