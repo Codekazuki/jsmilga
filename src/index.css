@@ -18,19 +18,22 @@ code {
 }
 .pix {
   height: 200px;
-  border: 1px solid red;
   border-radius: 16px;
 }
+.book h2 {
+  padding: 16px;
+}
 .book {
-  background-color: green;
+  background-color: rgb(58, 0, 128);
+  height: 300px;
   margin: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 16rem 0;
+  border-radius: 16px;
 }
 .booklist {
-  height: 90px;
   display: flex;
 }
