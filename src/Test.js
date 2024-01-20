@@ -1,4 +1,5 @@
 import React from "react";
+import myImage from "./assets/Screenshot (38).png";
 
 function Test() {
   return (
@@ -21,18 +22,16 @@ function Book() {
     <div className='book'>
       <Name />
       <Image />
+      <Book2 />
       <Author />
     </div>
   );
 }
 const Image = () => {
-  return (
-    <img
-      className='pix'
-      src='https://images-na.ssl-images-amazon.com/images/G/01/error/38._TTD_.jpg'
-      alt='amazon'
-    />
-  );
+  return <img className='pix' src={myImage} alt='amazon' />;
+};
+const Book2 = () => {
+  return <img className='pix' src='./images/Screeshot(41).png' alt='book2' />;
 };
 
 function Author() {
