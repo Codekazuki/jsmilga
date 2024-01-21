@@ -3,7 +3,8 @@ import React from "react";
 
 const name = "Babafemi";
 const middleName = "toyin";
-const photol = "./public/images/Screenshot (41).png";
+
+const eke = "./images/Screenshot (41).png";
 
 function Test() {
   return (
@@ -28,7 +29,8 @@ function Book() {
       <Image />
       <Book2 />
       <Author /> */}
-      <img src={photol} alt={name} />
+      <img height='48px' src={eke} alt={middleName} />
+
       <h2>{name}</h2>
       <h1>{middleName}</h1>
     </div>
