@@ -12,12 +12,12 @@ function App() {
   }
   return (
     <>
+      <BookList />
       <div className='App'>
         <button onClick={handleIncrement}>increment</button>
         <span>{count}</span>
         <button onClick={handleDecrement}>decrement</button>
       </div>
-      <BookList />
     </>
   );
 }
