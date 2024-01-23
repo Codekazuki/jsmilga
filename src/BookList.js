@@ -7,7 +7,7 @@ const BookList = () => {
       {books.map((book) => {
         // const { author, title, ima2, id } = book;
         return (
-          <h1>
+          <h1 className='book'>
             <Book {...book} key={book.id} />
           </h1>
         );
