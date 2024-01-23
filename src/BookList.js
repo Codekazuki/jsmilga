@@ -1,25 +1,26 @@
 import React from "react";
+import img1 from "./assets/image1.png";
+import img2 from "./assets/image2.png";
+import img3 from "./assets/image3.png";
 
 const books = [
   {
-    author: "Adebayo Faleti",
-    title: "Ogboju Ode",
-    imag: "./images/mancap.png",
-    ima2: "ogboju-ode.png",
-  },
-  {
     author: "Chinau Achebe",
     title: "Things fall apart",
-
-    ima2: "ogboju-ode.png",
+    imag: img1,
     id: 1,
   },
   {
     author: "g.o fagunwa",
     title: "lalude",
-    imag: "./images/mancap.png",
-    ima2: "ogboju-ode.png",
+    imag: img2,
     id: 2,
+  },
+  {
+    author: "Adebayo Faleti",
+    title: "Ogboju Ode",
+    imag: img3,
+    id: 3,
   },
 ];
 
@@ -38,11 +39,11 @@ const BookList = () => {
   );
 };
 
-function Book({ title, imag, ima2, author }) {
+function Book({ title, imag, author }) {
   return (
     <>
       <h1>{title}</h1>
-      <img src={ima2} alt={title} />
+      <img height='64px' src={imag} alt={title} />
       <h1>{author}</h1>
     </>
   );
