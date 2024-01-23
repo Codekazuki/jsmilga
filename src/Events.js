@@ -2,15 +2,19 @@ import React from "react";
 
 const Events = () => {
   function handleSubmit() {
-    alert("submit function");
+    console.log("submit function");
   }
   const handleChange = (e) => {
     e.preventDefault();
     console.log("changes made");
   };
+  const handleFormSubmission = (e) => {
+    e.preventDefault();
+    console.log("form submitted");
+  };
   return (
     <div>
-      <form action=''>
+      <form onSubmit={handleFormSubmission}>
         <h1>Sample form</h1>
         <input
           onChange={handleChange}
