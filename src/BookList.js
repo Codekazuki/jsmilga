@@ -6,6 +6,7 @@ const firstBook = {
   imag: "./images/mancap.png",
   ima2: "ogboju-ode.png",
 };
+
 const secondBook = {
   author: "Chinau Achebe",
   title: "Things fall apart",
@@ -22,17 +23,21 @@ const thirdBook = {
 const BookList = () => {
   return (
     <div>
-      <Book />
+      <Book
+        title={firstBook.title}
+        ima2={firstBook.ima2}
+        author={firstBook.author}
+      />
     </div>
   );
 };
 
-function Book(props) {
+function Book({ title, imag, ima2, author }) {
   return (
     <>
-      <h1>{props.title}</h1>
-      <img src={props.ima2} alt={props.title} />
-      <h1>{props.author}</h1>
+      <h1>{title}</h1>
+      <img src={ima2} alt={title} />
+      <h1>{author}</h1>
     </>
   );
 }
