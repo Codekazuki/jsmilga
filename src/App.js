@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import BookList from "./BookList";
+import Events from "./Events";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
   }
   return (
     <>
+      <Events />
       <BookList />
       <div className='App'>
         <button onClick={handleIncrement}>increment</button>
