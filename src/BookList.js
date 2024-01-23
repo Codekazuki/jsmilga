@@ -10,14 +10,16 @@ const books = [
   {
     author: "Chinau Achebe",
     title: "Things fall apart",
-    imag: "./images/mancap.png",
+
     ima2: "ogboju-ode.png",
+    id: 1,
   },
   {
     author: "g.o fagunwa",
     title: "lalude",
     imag: "./images/mancap.png",
     ima2: "ogboju-ode.png",
+    id: 2,
   },
 ];
 
@@ -25,10 +27,10 @@ const BookList = () => {
   return (
     <div>
       {books.map((book) => {
-        const { author, title, ima2 } = book;
+        const { author, title, ima2, id } = book;
         return (
           <h1>
-            <Book author={author} title={title} ima2={ima2} key={book.author} />
+            <Book author={author} title={title} ima2={ima2} key={id} />
           </h1>
         );
       })}
