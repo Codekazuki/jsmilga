@@ -27,10 +27,10 @@ const BookList = () => {
   return (
     <div>
       {books.map((book) => {
-        const { author, title, ima2, id } = book;
+        // const { author, title, ima2, id } = book;
         return (
           <h1>
-            <Book author={author} title={title} ima2={ima2} key={id} />
+            <Book {...book} key={book.id} />
           </h1>
         );
       })}
