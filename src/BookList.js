@@ -4,11 +4,11 @@ import { Book } from "./Book";
 const BookList = () => {
   return (
     <div>
-      {books.map((book) => {
+      {books.map((book, index) => {
         // const { author, title, ima2, id } = book;
         return (
           <h1 className='book'>
-            <Book {...book} key={book.id} />
+            <Book {...book} key={book.id} number={index} />
           </h1>
         );
       })}
