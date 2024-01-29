@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import BookList from "./BookList";
-import Events from "./Events";
+// import BookList from "./BookList";
+// import Events from "./Events";
 import Birthday from "./Birthday";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <Birthday />
-      <Events />
-      <BookList />
+      {/* <Events /> */}
+      {/* <BookList /> */}
       <div className='App'>
         <button onClick={handleIncrement}>increment</button>
         <span>{count}</span>
