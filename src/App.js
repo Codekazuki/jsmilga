@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import BookList from "./BookList";
 import Events from "./Events";
+import Birthday from "./Birthday";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function App() {
   }
   return (
     <>
+      <Birthday />
       <Events />
       <BookList />
       <div className='App'>
