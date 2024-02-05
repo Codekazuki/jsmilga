@@ -21,6 +21,13 @@ function App() {
         <button onClick={handleIncrement}>increment</button>
         <span>{count}</span>
         <button onClick={handleDecrement}>decrement</button>
+        <button
+          onClick={() => {
+            setCount((c) => 0);
+          }}
+        >
+          Reset
+        </button>
       </div>
     </>
   );
