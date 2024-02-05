@@ -21,7 +21,7 @@ const Events = () => {
           type='text'
           name='form'
           placeholder='type you input here'
-          style={{ color: "red", display: "block", margin: "1rem 2rem" }}
+          style={{ color: "green", display: "block", margin: "1rem 2.5rem" }}
         />
         <button onClick={handleSubmit}>Submit</button>
       </form>

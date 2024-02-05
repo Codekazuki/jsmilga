@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 // import BookList from "./BookList";
-// import Events from "./Events";
+import Events from "./Events";
 import Birthday from "./Birthday";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Birthday />
-      {/* <Events /> */}
+      <Events />
       {/* <BookList /> */}
       <div className='App'>
         <button onClick={handleIncrement}>increment</button>
