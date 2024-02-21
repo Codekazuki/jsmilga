@@ -6,28 +6,28 @@ import Birthday from "./Birthday";
 
 function App() {
   const [count, setCount] = useState(0);
-  function handleIncrement() {
-    setCount((c) => c + 1);
+  function increment() {
+    setCount(count + 1);
   }
-  function handleDecrement() {
-    setCount((c) => c - 1);
+  function decrement() {
+    setCount(count - 1);
+  }
+  function reset() {
+    setCount(0);
   }
   return (
     <>
-      <Birthday />
-      <Events />
+      {/* <Birthday /> */}
+      {/* <Events /> */}
       {/* <BookList /> */}
-      <div className='App'>
-        <button onClick={handleIncrement}>increment</button>
-        <span>{count}</span>
-        <button onClick={handleDecrement}>decrement</button>
-        <button
-          onClick={() => {
-            setCount((c) => 0);
-          }}
-        >
-          Reset
-        </button>
+      <div>
+        <h1>Counter for Innoliz Thomas"</h1>
+        <div>
+          <button onClick={increment}>Add</button>
+          <h1>{count}</h1>
+          <button onClick={decrement}>Minus</button>
+          <button onClick={reset}>Reset</button>
+        </div>
       </div>
     </>
   );
