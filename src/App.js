@@ -6,20 +6,19 @@ import Events from "./Events";
 function App() {
   const [count, setCount] = useState(0);
   function increment() {
-    setCount(count + 1);
+    setCount((c) => c + 1);
   }
   function decrement() {
-    setCount(count - 1);
+    setCount((c) => c - 1);
   }
   function reset() {
-    setCount(0);
+    setCount((c) => c * 0);
   }
   return (
     <>
       {/* <Events /> */}
       {/* <BookList /> */}
       <div>
-        <h1>Counter for Innoliz Thomas"</h1>
         <div>
           <button onClick={increment}>Add</button>
           <h1>{count}</h1>
