@@ -8,13 +8,16 @@ h1 {
 }
 .container {
   display: flex;
+  justify-content: space-around;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 .reset {
+  color: greenyellow;
 }
 .main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background-color: plum;
 }
