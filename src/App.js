@@ -18,13 +18,15 @@ function App() {
     <>
       {/* <Events /> */}
       {/* <BookList /> */}
-      <div>
-        <div>
+      <div className='main-container'>
+        <div className='container'>
           <button onClick={increment}>Add</button>
           <h1>{count}</h1>
           <button onClick={decrement}>Minus</button>
-          <button onClick={reset}>Reset</button>
         </div>
+        <button className='reset' onClick={reset}>
+          Reset
+        </button>
       </div>
     </>
   );

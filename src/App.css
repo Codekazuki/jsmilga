@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  color: green;
+  font-size: 4rem;
+}
+.container {
+  display: flex;
+}
+.reset {
+}
