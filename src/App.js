@@ -24,9 +24,6 @@ function App() {
           <h1>{count}</h1>
           <button onClick={decrement}>Minus</button>
         </div>
-        <button className='reset' onClick={reset}>
-          Reset
-        </button>
       </div>
     </>
   );
